@@ -15,15 +15,14 @@
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/flag-icon/css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/quill/quill.snow.css">
-    <link rel="stylesheet" href="/app-assets/vendors/select2/select2.min.css" type="text/css">
-    <link rel="stylesheet" href="/app-assets/vendors/select2/select2-materialize.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/vertical-dark-menu-template/materialize.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/vertical-dark-menu-template/style.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-sidebar.css">
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-todo.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-contacts.css">
     <!-- END: Page Level CSS-->
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/css/custom/custom.css">
@@ -113,37 +112,26 @@
             <div class="col s12">
                 <div class="container">
                     <!-- Sidebar Area Starts -->
-                    <div class="todo-overlay"></div>
                     <div class="sidebar-left sidebar-fixed">
                         <div class="sidebar">
                             <div class="sidebar-content">
                                 <div class="sidebar-header">
                                     <div class="sidebar-details">
-                                        <h5 class="m-0 sidebar-title">Categories</h5>
-                                        <div class="row valign-wrapper mt-10 pt-2 animate fadeLeft">
-                                            <div class="col s3 media-image">
-                                                <img src="/app-assets/images/avatar/avatar-18.png" alt="" class="circle z-depth-2 responsive-img">
-                                                <!-- notice the "circle" class -->
-                                            </div>
-                                            <div class="col s9">
-                                                <p class="m-0 subtitle font-weight-700">Jerome Honrado</p>
-                                                <p class="m-0 text-muted">jhonrado@nst-li.com</p>
-                                            </div>
-                                        </div>
+                                        <h5 class="m-0 sidebar-title"><i class="material-icons app-header-icon text-top">build</i> Categories
+                                        </h5>
                                     </div>
                                 </div>
-                                <div id="sidebar-list" class="sidebar-menu list-group position-relative  animate fadeLeft">
-                                    <div class="sidebar-list-padding app-sidebar sidenav" id="todo-sidenav">
-                                        <ul class="todo-list display-grid">
-                                            <li class="active"><a href="#!" class="text-sub"><i class="material-icons mr-2"> mail_outline </i> All Tickets</a>
-                                            </li>
+                                <div id="sidebar-list" class="sidebar-menu list-group position-relative animate fadeLeft delay-1">
+                                    <div class="sidebar-list-padding app-sidebar sidenav" id="contact-sidenav">
+                                        <ul class="contact-list display-grid">
+                                            <li class="active"><a href="#!" class="text-sub"><i class="material-icons mr-2"> mail_outline </i> All Tickets</a></li>
                                             <li class="sidebar-title">Filters</li>
                                             <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> confirmation_number </i> My Tickets</a></li>
                                             <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> drafts </i> Inbox</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <a href="#" data-target="todo-sidenav" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+                                <a href="#" data-target="contact-sidenav" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
                             </div>
                         </div>
                     </div>
@@ -232,9 +220,8 @@
     <script src="/app-assets/js/vendors.min.js"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="/app-assets/vendors/sortable/jquery-sortable-min.js"></script>
-    <script src="/app-assets/vendors/quill/quill.min.js"></script>
-    <script src="/app-assets/vendors/select2/select2.full.min.js"></script>
+    <script src="/app-assets/vendors/data-tables/js/jquery.dataTables.min.js"></script>
+    <script src="/app-assets/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="/app-assets/js/plugins.js"></script>
@@ -242,7 +229,7 @@
     <script src="/app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="/app-assets/js/scripts/app-todo.js"></script>
+    <script src="/app-assets/js/scripts/app-contacts.js"></script>
     <!-- END PAGE LEVEL JS-->
 </body>
 
