@@ -10867,6 +10867,13 @@ Cards
     margin-right: 10px;
 }
 
+#profile-card .card-content .service-card-i
+{
+    position: relative;
+    top: 6px;
+    margin-right: 10px;
+}
+
 #profile-card .card-content p
 {
     font-size: 1rem;
