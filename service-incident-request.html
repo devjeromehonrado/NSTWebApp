@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>NST Web Application</title>
+    <link rel="apple-touch-icon" href="/app-assets/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/app-assets/images/favicon/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/flag-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/vendors/quill/quill.snow.css">
+    <link rel="stylesheet" href="/app-assets/vendors/select2/select2.min.css" type="text/css">
+    <link rel="stylesheet" href="/app-assets/vendors/select2/select2-materialize.css" type="text/css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/vertical-dark-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/themes/vertical-dark-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/pages/app-todo.css">
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="/app-assets/css/custom/custom.css">
+    <!-- END: Custom CSS-->
+</head>
+<!-- END: Head-->
+
+<body class="vertical-layout page-header-light vertical-menu-collapsible vertical-dark-menu preload-transitions 2-columns  app-page menu-collapse" data-open="click" data-menu="vertical-dark-menu" data-col="2-columns">
+    <!-- BEGIN: Header-->
+    <header class="page-topbar" id="header">
+        <div class="navbar navbar-fixed">
+            <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-light">
+                <div class="nav-wrapper">
+                    <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
+                        <input class="header-search-input z-depth-2" type="text" name="Search" placeholder="Search" data-search="template-list">
+                    </div>
+                    <ul class="navbar-list right">
+                        <li class="hide-on-large-only search-input-wrapper"><a class="waves-effect waves-block waves-light search-button" href="javascript:void(0);"><i class="material-icons">search</i></a></li>
+                        <li><a class="waves-effect waves-block waves-light notification-button" href="javascript:void(0);" data-target="notifications-dropdown"><i class="material-icons">notifications_none<small class="notification-badge">0</small></i></a></li>
+                        <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="/app-assets/images/avatar/avatar-18.png" alt="avatar"><i></i></span></a></li>
+                    </ul>
+                    <!-- notifications-dropdown-->
+                    <ul class="dropdown-content" id="notifications-dropdown">
+                        <li>
+                            <h6>NOTIFICATIONS<span class="new badge">0</span></h6>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a class="black-text" href="#!">No new notifications</a>
+                        </li>
+                    </ul>
+                    <!-- profile-dropdown-->
+                    <ul class="dropdown-content" id="profile-dropdown">
+                        <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">person_outline</i> Profile</a></li>
+                        <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">help_outline</i> Help</a></li>
+                        <li class="divider"></li>
+                        <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">lock_outline</i> Lock</a></li>
+                        <li><a class="grey-text text-darken-1" href="#"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END: Header-->
+
+    <!-- BEGIN: SideNav-->
+    <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-dark sidenav-active-rounded">
+        <div class="brand-sidebar">
+            <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><img class="hide-on-med-and-down " src="/app-assets/images/logo/nst_logo.png" alt="NST WebApp" /><img class="show-on-medium-and-down hide-on-med-and-up" src="/app-assets/images/logo/nst_logo.png" alt="NST WebApp" /><span class="logo-text hide-on-med-and-down">NST-LI </span></a><a class="navbar-toggler" href="#">
+                <!-- <i class="material-icons">radio_button_checked</i> -->
+            </a></h1>
+        </div>
+        <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="accordion">
+            <li class="active bold"><a class="waves-effect waves-cyan active" href="index.html"><i class="material-icons">dashboard</i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">account_balance</i><span class="menu-title" data-i18n="Company">Company</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">contact_phone</i><span class="menu-title" data-i18n="Service/Incident Request">Service/ Incident Request</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">rate_review</i><span class="menu-title" data-i18n="Quotes">Quotes</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">local_grocery_store</i><span class="menu-title" data-i18n="Sales Order">Sales Order</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">insert_chart</i><span class="menu-title" data-i18n="Accounting">Accounting</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">people</i><span class="menu-title" data-i18n="Organization">Organization</span></a>
+            </li>
+            <li class="bold"><a class="waves-effect waves-cyan" href="#"><i class="material-icons">lock_outline</i><span class="menu-title" data-i18n="Company">Company</span></a>
+            </li>
+        </ul>
+        <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+    </aside>
+    <!-- END: SideNav-->
+
+    <!-- BEGIN: Page Main-->
+    <div id="main">
+        <div class="row">
+            <div id="breadcrumbs-wrapper">
+                <!-- Search for small screen-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 m6 16">
+                            <h5 class="breadcrumbs-title mt-0 mb-0"><span>Service/ Incident Request</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="container">
+                    <!-- Sidebar Area Starts -->
+                    <div class="todo-overlay"></div>
+                    <div class="sidebar-left sidebar-fixed">
+                        <div class="sidebar">
+                            <div class="sidebar-content">
+                                <div class="sidebar-header">
+                                    <div class="sidebar-details">
+                                        <h5 class="m-0 sidebar-title">Categories</h5>
+                                        <div class="row valign-wrapper mt-10 pt-2 animate fadeLeft">
+                                            <div class="col s3 media-image">
+                                                <img src="/app-assets/images/avatar/avatar-18.png" alt="" class="circle z-depth-2 responsive-img">
+                                                <!-- notice the "circle" class -->
+                                            </div>
+                                            <div class="col s9">
+                                                <p class="m-0 subtitle font-weight-700">Jerome Honrado</p>
+                                                <p class="m-0 text-muted">jhonrado@nst-li.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sidebar-list" class="sidebar-menu list-group position-relative  animate fadeLeft">
+                                    <div class="sidebar-list-padding app-sidebar sidenav" id="todo-sidenav">
+                                        <ul class="todo-list display-grid">
+                                            <li class="active"><a href="#!" class="text-sub"><i class="material-icons mr-2"> mail_outline </i> All Tickets</a>
+                                            </li>
+                                            <li class="sidebar-title">Filters</li>
+                                            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> confirmation_number </i> My Tickets</a></li>
+                                            <li><a href="#!" class="text-sub"><i class="material-icons mr-2"> drafts </i> Inbox</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" data-target="todo-sidenav" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar Area Ends -->
+
+                    <!-- Content Area Starts -->
+                    <div class="app-todo">
+                        <div class="content-area content-right">
+                            <div class="app-wrapper">
+                                <a class="waves-effect waves-light btn mb-1 mr-1">+ New Ticket</a>
+                                <div class="app-search">
+                                    <i class="material-icons mr-2 search-icon">search</i>
+                                    <input type="text" placeholder="Search Ticket" class="app-filter" id="todo_filter">
+                                </div>
+                                
+                                <div class="card card card-default scrollspy border-radius-6 fixed-width">
+                                    <div class="card-content p-0 pb-1">
+                                        <div class="todo-header">
+                                            <div class="header-checkbox">
+                                                <label>
+                                                    <input type="checkbox" onClick="toggle(this)" />
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                            <div class="list-content"></div>
+                                            <div class="todo-action">
+                                                <span class="sort-task"><i class="material-icons grey-text">sort</i></span>
+                                                <div class="select-action">
+                                                    <!-- Dropdown Trigger -->
+                                                    <a class='dropdown-trigger grey-text' href='#' data-target='dropdown1'>
+                                                        <i class="material-icons">more_vert</i>
+                                                    </a>
+                                                    <!-- Dropdown Structure -->
+                                                    <ul id='dropdown1' class='dropdown-content'>
+                                                        <li><a href="#!">Option 1</a></li>
+                                                        <li><a href="#!">Option 2</a></li>
+                                                        <li><a href="#!">Option 3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="collection todo-collection">
+                                            <li class="collection-item todo-items">
+                                                <div class="todo-move">
+                                                    <i class="material-icons icon-move">more_vert</i>
+                                                </div>
+                                                <div class="list-left">
+                                                    <label>
+                                                        <input type="checkbox" name="foo" />
+                                                        <span></span>
+                                                    </label>
+                                                    <i class="material-icons favorite">star_border</i>
+                                                </div>
+                                                <div class="list-content">
+                                                    <div class="list-title-area">
+                                                        <div class="list-title">Terminate – Working on NST User Termination offboarding Steps</div>
+                                                        <span class="badge grey lighten-2"><i class="purple-text material-icons small-icons mr-2">
+                                                                fiber_manual_record </i>In Queue</span>
+                                                    </div>
+                                                    <div class="list-desc">#1252161 opened on 8 September by Bryan Spano</div>
+                                                </div>
+                                                <div class="list-right">
+                                                    <div class="list-date"> 23 September 2021 </div>
+                                                </div>
+                                            </li>
+                                            <li class="collection-item todo-items">
+                                                <div class="todo-move">
+                                                    <i class="material-icons icon-move">more_vert</i>
+                                                </div>
+                                                <div class="list-left">
+                                                    <label>
+                                                        <input type="checkbox" name="foo" />
+                                                        <span></span>
+                                                    </label>
+                                                    <i class="material-icons favorite">star_border</i>
+                                                </div>
+                                                <div class="list-content">
+                                                    <div class="list-title-area">
+                                                        <div class="list-title">8/23 –  Bryan – New Hire : Shafi Mohammed – NST New Hire Onboarding Procedure</div>
+                                                        <span class="badge grey lighten-2"><i class="purple-text material-icons small-icons mr-2">
+                                                                fiber_manual_record </i>In Queue</span>
+                                                    </div>
+                                                    <div class="list-desc">#1238005 opened on 18 August by Bryan Spano</div>
+                                                </div>
+                                                <div class="list-right">
+                                                    <div class="list-date"> 25 July 2021 </div>
+                                                </div>
+                                            </li>
+                                            <li class="collection-item todo-items">
+                                                <div class="todo-move">
+                                                    <i class="material-icons icon-move">more_vert</i>
+                                                </div>
+                                                <div class="list-left">
+                                                    <label>
+                                                        <input type="checkbox" name="foo" />
+                                                        <span></span>
+                                                    </label>
+                                                    <i class="material-icons favorite">star_border</i>
+                                                </div>
+                                                <div class="list-content">
+                                                    <div class="list-title-area">
+                                                        <div class="list-title">NSTPMHW-2003 –  Review the MHW application for outdated versions of any third-party software</div>
+                                                        <span class="badge grey lighten-2"><i class="teal-text material-icons small-icons mr-2">
+                                                                fiber_manual_record </i>Queued</span>
+                                                    </div>
+                                                    <div class="list-desc">#1204330 opened on 8 June by Bryan Spano</div>
+                                                </div>
+                                                <div class="list-right">
+                                                    <div class="list-date"> 25 August 2021 </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Area Ends -->
+                </div>
+                <div class="content-overlay"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Page Main-->
+
+    <!-- BEGIN: Footer-->
+    <footer class="page-footer footer footer-static footer-light navbar-border navbar-shadow">
+        <div class="footer-copyright">
+            <div class="container"><span>&copy; 2021 <a href="https://nstwebsolutions.com/" target="_blank"><strong style="color:#7BAF57;">NST Web Solutions</strong></a> All rights reserved.</span><span class="right hide-on-small-only"></span></div>
+        </div>
+    </footer>
+    <!-- END: Footer-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="/app-assets/js/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="/app-assets/vendors/sortable/jquery-sortable-min.js"></script>
+    <script src="/app-assets/vendors/quill/quill.min.js"></script>
+    <script src="/app-assets/vendors/select2/select2.full.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN THEME  JS-->
+    <script src="/app-assets/js/plugins.js"></script>
+    <script src="/app-assets/js/search.js"></script>
+    <script src="/app-assets/js/custom/custom-script.js"></script>
+    <!-- END THEME  JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="/app-assets/js/scripts/app-todo.js"></script>
+    <!-- END PAGE LEVEL JS-->
+</body>
+
+</html>
